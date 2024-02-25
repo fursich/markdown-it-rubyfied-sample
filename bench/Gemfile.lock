@@ -1,0 +1,95 @@
+PATH
+  remote: /Users/koji/workspace/rust/markdown-rustified
+  specs:
+    markdown_rustified (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (7.1.3.2)
+      base64
+      bigdecimal
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      connection_pool (>= 2.2.5)
+      drb
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      mutex_m
+      tzinfo (~> 2.0)
+    addressable (2.8.6)
+      public_suffix (>= 2.0.2, < 6.0)
+    base64 (0.2.0)
+    bigdecimal (3.1.6)
+    charlock_holmes (0.7.7)
+    concurrent-ruby (1.2.3)
+    connection_pool (2.4.1)
+    crass (1.0.6)
+    drb (2.2.0)
+      ruby2_keywords
+    escape_utils (1.1.1)
+    gemoji (4.1.0)
+    github-linguist (4.8.18)
+      charlock_holmes (~> 0.7.3)
+      escape_utils (~> 1.1.0)
+      mime-types (>= 1.19)
+      rugged (>= 0.23.0b)
+    html-pipeline (2.14.3)
+      activesupport (>= 2)
+      nokogiri (>= 1.4)
+    i18n (1.14.1)
+      concurrent-ruby (~> 1.0)
+    markly (0.10.0)
+    mem (0.1.5)
+    mime-types (3.5.2)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2024.0206)
+    minitest (5.22.2)
+    mutex_m (0.2.0)
+    nokogiri (1.16.2-aarch64-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.2-arm-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.2-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.2-x86-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.2-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.2-x86_64-linux)
+      racc (~> 1.4)
+    public_suffix (5.0.4)
+    qiita-markdown (1.1.0)
+      addressable
+      gemoji
+      github-linguist (~> 4.0)
+      html-pipeline (~> 2.0)
+      mem
+      qiita_marker (~> 0.23.9)
+      rouge (~> 4.2)
+      sanitize
+    qiita_marker (0.23.9.0)
+    racc (1.7.3)
+    rouge (4.2.0)
+    ruby2_keywords (0.0.5)
+    rugged (1.7.2)
+    sanitize (6.1.0)
+      crass (~> 1.0.2)
+      nokogiri (>= 1.12.0)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+
+PLATFORMS
+  aarch64-linux
+  arm-linux
+  arm64-darwin
+  x86-linux
+  x86_64-darwin
+  x86_64-linux
+
+DEPENDENCIES
+  markdown_rustified!
+  markly
+  qiita-markdown
+
+BUNDLED WITH
+   2.5.6

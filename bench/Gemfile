@@ -1,0 +1,7 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+gem 'markdown_rustified', path: '/Users/koji/workspace/rust/markdown-rustified/'
+gem 'markly'
+gem 'qiita-markdown'
