@@ -1,0 +1,35 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "bundler/setup"
+require "markdown_it_rubyfied_sample"
+
+unless ARGV.size == 1 || ARGV.size == 2
+  puts "Usage: convert <input.md> (<output.html>)"
+  exit 1
+end
+
+text = File.read(ARGV[0])
+if ARGV.size == 1
+  contents, toc = MarkdownIt.convert_with_toc(text)
+
+  puts contents
+
+  unless toc.empty?
+    puts "<hr>"
+    puts "<h2>Table of Contents</h2>"
+    puts toc
+  end
+else
+  File.open(ARGV[1], "w") do |f|
+    contents, toc = MarkdownIt.convert_with_toc(text)
+
+    f.puts contents
+
+    unless toc.empty?
+      f.puts "<hr>"
+      f.puts "<h2>Table of Contents</h2>"
+      f.puts toc
+    end
+  end
+end
